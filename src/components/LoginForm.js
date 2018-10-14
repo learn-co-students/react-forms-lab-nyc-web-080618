@@ -3,7 +3,7 @@ import React from "react";
 class LoginForm extends React.Component {
   constructor() {
     super();
-
+   console.log(this);
     this.state = {
       username:"",
       password:""
@@ -11,8 +11,11 @@ class LoginForm extends React.Component {
   }
 
   handleChange=(e)=>{
+
     this.setState({...this.state,[e.target.name]:e.target.value})
   }
+
+
 
   handleSubmit=(e)=>{
     e.preventDefault()

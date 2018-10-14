@@ -10,11 +10,14 @@ class TwitterMessage extends React.Component {
   }
 
   handleChange=(e)=>{
+
     this.setState({message:e.target.value})
   }
 
   render() {
+
     return (
+
       <div>
         <strong>Your message:</strong>
         <p>remaining characters:{this.props.maxChars-this.state.message.length}</p>
